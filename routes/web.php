@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
  
 Route::get('/latihan-php', function () { 
     $nama = 'Nama Mahasiswa'; 
-    $nilai = [40, 15, 30, 20, 45]; 
+    $nilai = [80, 75, 90, 60, 85]; 
  
     $hitungRataRata = function (array $data): float { 
         $total = 0; 
@@ -24,4 +24,4 @@ Route::get('/latihan-php', function () {
     return view('latihan-php', compact( 
         'nama', 'nilai', 'rataRata', 'status' 
     )); 
-}); 
+});
